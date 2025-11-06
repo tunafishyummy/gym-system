@@ -5,6 +5,7 @@
 #include <fstream>
 #include <cstdlib>
 #include <ctime>
+#include <filesystem> // so the images can be saved in their own folder
 #include "libraryqrcode/qrcodegen.hpp"
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h" //goo goo gaga googoo
@@ -427,7 +428,8 @@ void generateQRCode(const MemberRecord &member) {
     }
 
 
-    string filename = member.name + "_QR.png";
+    std::filesystem::create_directories("qrcodes"); // creates directory for qr code images
+    string filename = "qrcodes/" + member.name + "_QR.png"; // that '"qrcodes/'" part is the folder
     if (!stbi_write_png(filename.c_str(), imgSize, imgSize, 3, img.data(), imgSize * 3))
         cerr << "Failed to write " << filename << "\n";
     else
