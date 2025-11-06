@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "this will build the exe file",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "gyms1.cpp",
+                "libraryqrcode/qrcodegen.cpp",
+                "-std=c++17",
+                "-o",
+                "gyms1.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
