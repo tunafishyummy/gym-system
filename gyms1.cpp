@@ -7,7 +7,7 @@
 #include <ctime>
 #include "libraryqrcode/qrcodegen.hpp"
 #define STB_IMAGE_WRITE_IMPLEMENTATION
-#include "stb_image_write.h" //goo goo gaga
+#include "stb_image_write.h" //goo goo gaga googoo
 
 
 using namespace std;
