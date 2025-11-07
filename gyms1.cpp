@@ -469,4 +469,3 @@ void scanQRCodeManual() {
     cout << "\nPress Enter to continue..";
     cin.get();
 }
-//balls
