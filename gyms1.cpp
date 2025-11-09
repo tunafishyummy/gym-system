@@ -8,7 +8,7 @@
 #include <filesystem> // so the images can be saved in their own folder
 #include "libraryqrcode/qrcodegen.hpp"
 #define STB_IMAGE_WRITE_IMPLEMENTATION
-#include "stb_image_write.h" //goo goo gaga googoo
+#include "stb_image_write.h"
 
 
 using namespace std;
