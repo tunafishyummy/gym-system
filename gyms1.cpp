@@ -156,6 +156,8 @@ void choices(int choice) {
                         cout << "- Availment: Monthly Pass (PHP 600)\n";
                     if (memberList[i].hasDaily)
                         cout << "- Availment: Member Day Pass (PHP 45)\n";
+                    if (!memberList[i].hasMonthly && !memberList[i].hasDaily)
+                        cout << "- Availment: None\n" ;
                 }
 
 
